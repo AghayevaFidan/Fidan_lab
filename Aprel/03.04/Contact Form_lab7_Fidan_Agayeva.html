@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Form Demo 10</title>
+    <style>
+        label {
+            width: 120px;
+            display: inline-block;
+            text-align: right;
+        }
+
+        span.shortcut {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="text-align: center">Contact Details</h1>
+
+    <form style="width: 460px; margin: auto; border: solid 1px; padding: 0 1em;" method="post" action="">
+        <p>Please enter your personal details:</p>
+        <p><label for="fname"><span class="shortcut">F</span>irst name:* </label><input type="text" size="15" accesskey="F" id="fname" name="fname" required></p>
+        <p><label for="lname"><span class="shortcut">L</span>ast name:* </label><input type="text" size="15" accesskey="L" id="lname" name="lname" required></p>
+        <p><label for="addr">Street <span class="shortcut">a</span>ddress: </label><input type="text" size="40" accesskey="A" id="addr" name="addr"></p>
+        <p><label for="town"><span class="shortcut">T</span>own/city: </label><input type="text" size="15" accesskey="T" id="town" name="town"></p>
+        <p><label for="pcode">Post<span class="shortcut">c</span>ode/zip: </label><input type="text" size="8" accesskey="C" id="pcode" name="pcode"></p>
+        <p><label for="tel">Tele<span class="shortcut">p</span>hone: </label><input type="tel" size="15" accesskey="P" id="tel" name="tel"></p>
+        <p><label for="mob"><span class="shortcut">M</span>obile: </label><input type="tel" size="15" accesskey="M" id="mob" name="mob"></p>
+        <p><label for="email"><span class="shortcut">E</span>mail address:* </label><input type="email" size="40" accesskey="E" id="email" name="email" required></p>
+        <p style="text-align: center;"><small>Fields marked * are required.</small></p>
+        <p style="text-align: center;"><button type="submit" accesskey="S"><span class="shortcut">S</span>ubmit</button></p>
+    </form>
+
+</body>
+</html>
